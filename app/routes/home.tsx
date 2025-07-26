@@ -19,22 +19,22 @@ export default function Home() {
       <Navbar />
 
       <section className="main-section">
-        <div className="page-heading">
+        <div className="page-heading py-16">
           <h1>Track Your Application & Ratings</h1>
           <h2>
             Upload your resume and get a detailed analysis of your application
             status.
           </h2>
         </div>
-      </section>
 
-      {resumes.length > 0 && (
-        <div className="resumes-section">
-          {resumes.map((resume) => (
-            <ResumeCard key={resume.id} resume={resume} />
-          ))}
-        </div>
-      )}
+        {resumes.length > 0 && (
+          <div className="resumes-section">
+            {resumes.map((resume) => (
+              <ResumeCard key={resume.id} resume={resume} />
+            ))}
+          </div>
+        )}
+      </section>
     </main>
   );
 }
