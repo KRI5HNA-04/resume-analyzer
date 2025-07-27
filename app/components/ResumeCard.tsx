@@ -10,7 +10,7 @@ const ResumeCard = ({
   return (
     <Link
       to={`/resume/${id}`}
-      className="resume-card animate-in fade-in duration-1000"
+      className="resume-card animate-in fade-in duration-500 hover:scale-105"
     >
       <div className="resume-card-header">
         <div className="flex flex-col gap-2">
@@ -28,7 +28,7 @@ const ResumeCard = ({
           <img
             src={imagePath}
             alt="Resume"
-            className="w-full h-[350px] max-sm:h-[200px] object-cover object-top"
+            className="w-full h-[350px] max-sm:h-[200px] object-cover object-top hover:scale-105 transition-transform duration-700"
           />
         </div>
       </div>
